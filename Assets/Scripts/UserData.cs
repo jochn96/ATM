@@ -8,19 +8,12 @@ using UnityEngine;
 [System.Serializable]
 public class UserData 
 {
-    /// <summary>
-    /// 사용자 이름
-    /// </summary>
+    
     public string userName;
     
-    /// <summary>
-    /// 현금 보유액
-    /// </summary>
+    
     public int cash;
     
-    /// <summary>
-    /// 계좌 잔액
-    /// </summary>
     public int balance;
 
     /// <summary>

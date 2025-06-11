@@ -4251,7 +4251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userData:
-    userName: 
+    userName: "\uC870\uC131"
     cash: 0
     balance: 0
 --- !u!1 &1161741783
@@ -7078,6 +7078,7 @@ MonoBehaviour:
   withdraw: {fileID: 863120209}
   Button: {fileID: 239852786}
   uiPopup: {fileID: 1873418829}
+  saveCompletePopup: {fileID: 0}
   cashText: {fileID: 400652687}
   balancemoneyText: {fileID: 1161741785}
   nameText: {fileID: 438811836}

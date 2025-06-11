@@ -7,32 +7,21 @@ using System.IO;
 using UnityEditor;
 #endif
 
-/// <summary>
-/// 게임 전체를 관리하는 싱글톤 매니저 클래스
-/// </summary>
+
 public class GameManager : MonoBehaviour
 {
-    /// <summary>
-    /// 싱글톤 인스턴스
-    /// </summary>
+    
     public static GameManager Instance;
     
-    /// <summary>
-    /// 사용자 데이터
-    /// </summary>
+    
     [SerializeField]
     public UserData userData;
 
-    //public string userName;
-    //public int cash;
-    //public int balance;
-
+   
     private const string SAVE_FILE_NAME = "userdata.json";
     private string SavePath => Path.Combine(Application.dataPath, "Resources", SAVE_FILE_NAME);
 
-    /// <summary>
-    /// 초기화 및 데이터 로드
-    /// </summary>
+    
     public void Awake()
     {
         if (Instance == null)
@@ -106,7 +95,7 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     // 기본 데이터 생성
-                    userData = new UserData("사용자", 100000, 50000);
+                    userData = new UserData("조성찬", 100000, 50000);
                     Debug.Log("기본 데이터 생성");
                     SaveUserData(); // 기본 데이터 저장
                 }
@@ -116,7 +105,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError($"데이터 로드 실패: {e.Message}");
             // 오류 발생 시 기본 데이터 생성
-            userData = new UserData("사용자", 100000, 50000);
+            userData = new UserData("조성찬", 100000, 50000);
         }
     }
     
